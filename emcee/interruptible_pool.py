@@ -29,8 +29,8 @@ __all__ = ["InterruptiblePool"]
 
 import signal
 import functools
-from multiprocessing.pool import Pool
-from multiprocessing import TimeoutError
+from multiprocess.pool import Pool
+from multiprocess import TimeoutError
 
 
 def _initializer_wrapper(actual_initializer, *rest):
